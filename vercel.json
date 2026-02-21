@@ -4,8 +4,7 @@
   "buildCommand": "cd my-profile/frontend && npm install && npm run build",
   "outputDirectory": "my-profile/frontend/dist",
   "rewrites": [
-    { "source": "/api/guestbook/:id", "destination": "/my-profile/api/guestbook/[id]" },
-    { "source": "/api/guestbook", "destination": "/my-profile/api/guestbook" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/api/guestbook/:id", "destination": "/api/guestbook/[id]" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ]
 }
