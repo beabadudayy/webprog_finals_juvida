@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "installCommand": "cd my-profile && npm install",
+  "installCommand": "npm install && cd my-profile && npm install",
   "buildCommand": "cd my-profile/frontend && npm install && npm run build",
   "outputDirectory": "my-profile/frontend/dist",
   "rewrites": [
