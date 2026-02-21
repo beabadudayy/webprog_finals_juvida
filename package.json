@@ -1,0 +1,8 @@
+{
+  "name": "webprog-finals-juvida",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "cd my-profile && npm install && cd frontend && npm install && npm run build"
+  }
+}
