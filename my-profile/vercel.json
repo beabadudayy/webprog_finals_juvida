@@ -2,5 +2,10 @@
   "version": 2,
   "installCommand": "npm install",
   "buildCommand": "cd frontend && npm install && npm run build",
-  "outputDirectory": "frontend/dist"
+  "outputDirectory": "frontend/dist",
+  "rewrites": [
+    { "source": "/api/guestbook/:id", "destination": "/api/guestbook/[id]" },
+    { "source": "/api/guestbook", "destination": "/api/guestbook" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
