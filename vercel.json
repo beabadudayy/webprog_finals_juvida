@@ -3,11 +3,6 @@
   "installCommand": "cd my-profile && npm install",
   "buildCommand": "cd my-profile/frontend && npm install && npm run build",
   "outputDirectory": "my-profile/frontend/dist",
-  "functions": {
-    "my-profile/api/**/*.ts": {
-      "runtime": "@vercel/node@3"
-    }
-  },
   "rewrites": [
     { "source": "/api/guestbook/:id", "destination": "/my-profile/api/guestbook/[id]" },
     { "source": "/api/guestbook", "destination": "/my-profile/api/guestbook" },
